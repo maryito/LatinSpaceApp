@@ -76,6 +76,7 @@ oauth1@1.1.11
 oauth2@1.1.11
 observe-sequence@1.0.16
 ordered-dict@1.0.9
+pauloborges:mapbox@2.2.3_2
 promise@0.8.8
 random@1.0.10
 rate-limit@1.0.8

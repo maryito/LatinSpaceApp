@@ -21,4 +21,9 @@ if (Api.find().count() === 0 ){
 
 
 });
-
+Images = new FS.Collection("images",{
+    stores: [
+        Stores.images,
+        Stores.thumbs
+    ]
+});

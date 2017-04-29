@@ -16,5 +16,10 @@ Template.api.events({
      event.preventDefault();
      const x = Session.get('+Api') + 10;
      Session.set('+Api', x)
+  },
+  'click .mapaIdBt': function( event, template) {
+    event.preventDefault();
+    let data = $('#'+this._id).data('id')
+    console.log(  " id  mapa ", data);
   } 
 });

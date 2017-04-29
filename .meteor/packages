@@ -34,4 +34,5 @@ service-configuration
 accounts-google
 pauloborges:mapbox@2.2.3_2
 aldeed:autoform@5.8.1
-mdg:geolocation
+yogiben:autoform-map
+fourseven:scss

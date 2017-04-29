@@ -11,10 +11,16 @@ Template.api.helpers({
     return Api.find({}, { limit: aum });
   }
 });
-Template.api.events({
-  'click #apiMas': function (event, template) {
+
+Template.api.events({ 
+  'click #apiMas': function(event, template) { 
+     event.preventDefault();
+     const x = Session.get('+Api') + 10;
+     Session.set('+Api', x)
+  },
+  'click .mapaIdBt': function( event, template) {
     event.preventDefault();
-    const x = Session.get('+Api') + 10;
-    Session.set('+Api', x)
-  }
+    let data = $('#'+this._id).data('id')
+    console.log(  " id  mapa ", data);
+  } 
 });

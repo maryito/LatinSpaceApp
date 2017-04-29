@@ -1,25 +1,43 @@
 <head>
   <title>LatinSpaceApp</title>
+  <link href="http://cesiumjs.org/releases/1.11/Build/Cesium/Widgets/widgets.css" rel="stylesheet" />
 </head>
 
-<body>
-  <div class="container">
-    <h1> Proyecto When Landslides Strike by LatinSpaceApp </h1>
+<template name="layout">
 
-    <div class="row">
-      <h2> Mapas google </h2>
-      {{> mapas}}
+  <body>
+    {{> navegacion }}
+    <div class="container">
       <br>
+      <br>
+      {{> yield }}
     </div>
-    <br>
 
-    <div class="row">
-      <h2> Datos del API </h2>
-      <!-- Instancia del  template de api-->
-      {{> api}}
+  </body>
+</template>
 
+
+<template name="home">
+  <div class="row">
+    <h1> Proyecto When Landslides Strike by LatinSpaceApp </h1>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+        {{> mapas }}
     </div>
+    <div class="col-md-6">
+        {{> cesium }}
+    </div>
+  </div>
+  
+  <hr>
+
+  <div class="row">
+    <h2> Datos del API </h2>
+    <!-- Instancia del  template de api-->
+    {{> api}}
 
   </div>
 
-</body>
+</template>

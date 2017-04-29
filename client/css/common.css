@@ -1,0 +1,99 @@
+/* All main containers and common styling goes here */
+
+/*@import url(/js/cesium/Build/Cesium/Widgets/widgets.css);*/
+/*body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+    padding:0;
+    margin:5px 6px 0px;
+    list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+    margin: 0;
+}
+
+hr {
+    margin: 1;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding:0;
+}
+footer {
+
+}*/
+
+#graphContainer {
+   /*position: absolute;*/ 
+  left: 0; 
+  top: 0; 
+  width: 20%; 
+  height: 60%; 
+  margin: 0; 
+  padding: 0; 
+  border: 1; 
+  background-color: rgba(256, 256, 256, 0.1);
+}
+#dbgContainer {
+   /*position: absolute;*/ 
+  left: 15%;
+  bottom: 15%; 
+  width: auto; 
+  margin-left: 20px; 
+  border: 0; 
+  border-radius: 3px; 
+  text-align: center; 
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+#dbgContainer td {
+  padding : 1px 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#cesiumContainer {
+   /*position: absolute;*/ 
+  left: 0; 
+  bottom: 15%; 
+  height: 85%; 
+  width: 100%;
+}
+#visContainer {
+   /*position: absolute;*/ 
+  left: 0; 
+  bottom: 0; 
+  height: 15%; 
+  width: 100%; 
+  overflow-y: scroll; 
+}
+#creditContainer {
+   /*position: absolute;*/ 
+  left: 0; 
+  bottom: 0; 
+  width: 20%;
+}
+
+.commentDisplay {
+  position:absolute;
+  top: 30px;
+  left:10px;
+}
+
+#credit-holder {
+  display: none;
+}

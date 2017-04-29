@@ -23,3 +23,13 @@ http
 twbs:bootstrap
 dburles:google-maps
 session
+stylus
+ian:accounts-ui-bootstrap-3
+accounts-password
+alanning:roles
+sacha:spin
+iron:router
+accounts-facebook
+accounts-twitter
+service-configuration
+accounts-google

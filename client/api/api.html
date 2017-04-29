@@ -1,7 +1,8 @@
 <template name="api">
   <div class="col-md-12">
-    <table class="table table-responsive table-hover table-sm ">
-      <tr>
+    <table class="table ">
+      <tbody>
+ <tr>
         <th> Country </th>
         <th> Direccion </th>
         <th> Latitud </th>
@@ -9,8 +10,6 @@
         <th> Tipo Deslizamiento </th>
         <th> Tamaño </th>
       </tr>
-
-
       {{#each data }}
       <tr>
         <td> {{countryname}} </td>
@@ -21,6 +20,8 @@
         <td> {{landslide_size}} </td>
       </tr>
       {{/each}}
+      </tbody>
+     
     </table>
   </div>
 

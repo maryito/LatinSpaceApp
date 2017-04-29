@@ -1,23 +1,69 @@
-/* The following include is from bootstrap, please visit */
-@import url('./css/bootstrap.css');
+/* Importing some fonts from google fonts API*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700i');
 
 /* Custom CSS, that overrides some of the established by bootstrap, for the application */
-html
+
+body
 {
-  font-family: 'Open Sans', sans-serif;
+  background-color: #58749B;
+  font-family: 'PT Sans', sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-
-.map-container
-{
-  width: 600px;
-  max-width: 100%;
-  height: 800px;
+/* Depende del dispositivo y el tipo de navegador, realiza una escala para ocupar el tamaño de la pantalla*/
+@-ms-viewport {
+  width: auto !important;
+}
+@-webkit-viewport {
+  width: device-width;
 }
 
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/*Definir el tamaño del contenido */
+.page-content {
+    margin-left: 20px;
+    margin-top: 0px;
+    min-height: 1200px;
+    padding: 25px 20px 20px 20px;
+    background-color: #58749B;
+}
+
+ #map
+ {
+   position:absolute;
+   top:0;
+   bottom:0;
+   width:100%;
+ }
+
+.map-container {
+  width: 98%;
+  height: 500px;
+  position: absolute;
+}
+
+.page-container {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -136,10 +182,4 @@ html
 .lsa-btn
 {
   background-color: #09546e;
-}
-
-.lsa-back
-{
-  background-color: #B4C3C9;
-  background: linear-gradient(60% 55%, closest-side, #B4C3C9, #888888);
 }

@@ -1,1 +1,141 @@
-/* CSS declarations go here */
+/* The following include is from bootstrap, please visit */
+@import url('./css/bootstrap.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+/* Custom CSS, that overrides some of the established by bootstrap, for the application */
+html
+{
+  font-family: 'Open Sans', sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+.map-container
+{
+  width: 600px;
+  max-width: 100%;
+  height: 800px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.user-dropdown {
+    /* Size and position */
+    position: relative; /* Enable absolute positionning for children and pseudo elements */
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 15px;
+
+    /* Styles */
+    background: #fff;
+    border-left: 5px solid grey;
+    cursor: pointer;
+    outline: none;
+}
+
+.user-dropdown:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: grey transparent;
+}
+
+.user-dropdown .dropdown {
+  /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: -5px;
+    right: 0px;
+
+    /* Styles */
+    background: white;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    list-style: none;
+
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.user-dropdown .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    border-left: 5px solid;
+    padding: 10px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.user-dropdown .dropdown li:nth-child(1) a {
+    border-left-color: #00ACED;
+}
+
+.user-dropdown .dropdown li:nth-child(2) a {
+    border-left-color: #4183C4;
+}
+
+.user-dropdown .dropdown li:nth-child(3) a {
+    border-left-color: #3B5998;
+}
+
+.user-dropdown .dropdown li i {
+    margin-right: 5px;
+    color: inherit;
+    vertical-align: middle;
+}
+
+/* Hover state */
+
+.user-dropdown .dropdown li:hover a {
+    color: grey;
+}
+
+/* Active state */
+
+.user-dropdown.active:after {
+    border-width: 0 6px 6px 6px;
+}
+
+.user-dropdown.active .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lsa-btn
+{
+  background-color: #;
+}
+
+.

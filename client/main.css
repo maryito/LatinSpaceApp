@@ -135,7 +135,11 @@ html
 
 .lsa-btn
 {
-  background-color: #;
+  background-color: #09546e;
 }
 
-.
+.lsa-back
+{
+  background-color: #B4C3C9;
+  background: linear-gradient(60% 55%, closest-side, #B4C3C9, #888888);
+}

@@ -9,8 +9,7 @@
     {{> navegacion }}
     <div class="container">
       <br>
-      <br>
-      {{> yield }}
+      <br> {{> yield }}
     </div>
 
   </body>
@@ -20,22 +19,18 @@
 <template name="home">
   <div class="row">
     <h1> Proyecto When Landslides Strike by LatinSpaceApp </h1>
-  </div>
-  <hr>
-  <div class="row">
-    <!--div class="col-md-6">
-        {{> mapas }}
-    </div>
-    <div class="col-md-6">
-      {{> streetmap}}
-    </div>
-  </div>
+  
   <hr>
 
+  </div>
+  <hr>
+   <div class="col-md-12 map-container ">
+    {{> mapa }}
+   </div>
+
   <div class="row">
-    <h2> Datos del API </h2>
-    <!-- Instancia del  template de api-->
-    {{> api}}
+    <h2> Datos del API de la NASA </h2>
+    Instancia del template de api {{> api}}
 
   </div>
 

@@ -2,26 +2,26 @@
   <div class="col-md-12">
     <table class="table ">
       <tbody>
- <tr>
-        <th> Country </th>
-        <th> Direccion </th>
-        <th> Latitud </th>
-        <th> Logitud </th>
-        <th> Tipo Deslizamiento </th>
-        <th> Tamaño </th>
-      </tr>
-      {{#each data }}
-      <tr>
-        <td> {{countryname}} </td>
-        <td> {{nearest_places}} </td>
-        <td> {{latitude}} </td>
-        <td> {{longitude}} </td>
-        <td> {{landslide_type}} </td>
-        <td> {{landslide_size}} </td>
-      </tr>
-      {{/each}}
+        <tr>
+          <th> Country </th>
+          <th> Direccion </th>
+          <th> Latitud </th>
+          <th> Logitud </th>
+          <th> Tipo Deslizamiento </th>
+          <th> Tamaño </th>
+        </tr>
+        {{#each data }}
+        <tr>
+          <td> {{countryname}} </td>
+          <td> {{nearest_places}} </td>
+          <td> {{latitude}} </td>
+          <td> {{longitude}} </td>
+          <td> {{landslide_type}} </td>
+          <td> {{landslide_size}} </td>
+        </tr>
+        {{/each}}
       </tbody>
-     
+
     </table>
     <div class="col-md-12">
       <button id="apiMas" class="btn btn-primary btn-lg"> Ver mas</button>

@@ -6,8 +6,26 @@
 
 /* Custom CSS, that overrides some of the established by bootstrap, for the application */
 
+.badge
+{
+  -webkit-animation: bounceInUp 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: bounceInUp 2s; /* Firefox < 16 */
+      -ms-animation: bounceInUp 2s; /* Internet Explorer */
+       -o-animation: bounceInUp 2s; /* Opera < 12.1 */
+          animation: bounceInUp 2s;
+}
 .form-group
 {
+  -webkit-animation: bounceInRight 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: bounceInRight 2s; /* Firefox < 16 */
+      -ms-animation: bounceInRight 2s; /* Internet Explorer */
+       -o-animation: bounceInRight 2s; /* Opera < 12.1 */
+          animation: bounceInRight 2s;
+}
+.list-group-background
+{
+  opacity: 0.85;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n1.png");
   -webkit-animation: bounceInRight 2s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: bounceInRight 2s; /* Firefox < 16 */
       -ms-animation: bounceInRight 2s; /* Internet Explorer */

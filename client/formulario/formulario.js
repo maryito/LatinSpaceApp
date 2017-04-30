@@ -52,7 +52,8 @@ Template.uploadForm.events({
         var upload = Images.insert({
           file: e.currentTarget.files[0],
           streams: 'dynamic',
-          chunkSize: 'dynamic'
+          chunkSize: 'dynamic',
+          reporteId: Session.get('imagenForm') 
         }, false);
 
         upload.on('start', function () {
@@ -73,7 +74,7 @@ Template.uploadForm.events({
         upload.start();
       }
     } else{
-      alert("Alcanzo el numero de fotos permitido.")
+      alert("Alcanzo el maximo de fotos permitidas.")
     
       Meteor.setInterval( () => {
         console.log("reenviando...")
@@ -93,6 +94,7 @@ AutoForm.hooks({
       if (result) {
         alert(" Paso 1/2 Completado!")
         Session.set('FormularioListo', true);
+         Session.set('imagenForm', result);
 
         console.log("Agregando reporte ", result)
 

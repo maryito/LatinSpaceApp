@@ -1,11 +1,27 @@
-Template.formularios.onCreated(function () {
-  Session.set('FormularioListo', false);
-  GoogleMaps.load({
-    key: "AIzaSyCTmQZ_IJoqteedF6XDFjdsaCgaSxDnhik",
-    template: "places"
-  });
+
+Template.formularios.onCreated( function(){
+    Session.set('FormularioListo', false);
+    /*  GoogleMaps.load({
+        key: "AIzaSyCTmQZ_IJoqteedF6XDFjdsaCgaSxDnhik",
+        template: "places"
+     }); */
 })
 
+Template.formularios.onRendered( function(){
+  L.Icon.Default.imagePath = '/packages/bevanhunt_leaflet/images/';
+  var mapUrl = 'http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png';
+  var mapTiles = L.tileLayer(mapUrl);
+  var map = L.map('formmap', {
+    zoom: 5,
+    center: [0,0],
+    scrollWheelZoom: true,
+    layers: [mapTiles]
+  });
+  map.spin(true);
+  map._layersMinZoom=3;
+  map.setMaxBounds([[84.67351256610522, -174.0234375], [-64.77413, 15.82031]]);
+  map.spin(false);
+})
 
 Template.formularios.helpers({
   ReadyForm() {

@@ -6,6 +6,15 @@
 
 /* Custom CSS, that overrides some of the established by bootstrap, for the application */
 
+.form-group
+{
+  -webkit-animation: bounceInRight 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: bounceInRight 2s; /* Firefox < 16 */
+      -ms-animation: bounceInRight 2s; /* Internet Explorer */
+       -o-animation: bounceInRight 2s; /* Opera < 12.1 */
+          animation: bounceInRight 2s;
+}
+
 body
 {
   background-image: url("/resources/pattern_n4.png");
@@ -311,7 +320,9 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 
 /* lsa datatable end*/
 
+/* lsa-d3-graph */
 
+/* end lsa-d3-graph */
 
 /* Depende del dispositivo y el tipo de navegador, realiza una escala para ocupar el tamaño de la pantalla*/
 @-ms-viewport {
@@ -352,7 +363,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
    bottom:0;
    width:100%;
    border: 2px solid #000;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+   box-shadow: 10px 10px 5px rgba(0,0,0,0.9);
    -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
       -moz-animation: fadeIn 2s; /* Firefox < 16 */
        -ms-animation: fadeIn 2s; /* Internet Explorer */

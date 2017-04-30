@@ -5,7 +5,7 @@
       <div>
         {{#if ReadyForm }}
          <h1> Paso 2/2 </h1>
-           {{else}} 
+           {{else}}
              <h1> Paso 1/2 </h1>
         {{/if}}
 
@@ -14,29 +14,31 @@
         <h1> Reporte de Deslizamiento</h1>
         {{#if ReadyForm }}
         <div class="form-group">
-            
+            <div id="formmap">
+            </div>
+
             <h1> Fotos del Incidente </h1>
             <label class="control-label"> Agregar Foto. </label>
             {{> uploadForm}}
         </div>
-        {{else}} 
+        {{else}}
             <div>
             {{> quickForm schema=Schemas.deslizamineto doc=this id="reporteFormDelizamiento" type="method" meteormethod="formularioAdd"
-            template="bootstrap3-horizontal" label-class="col-sm-3" input-col-class="col-sm-9"  buttonContent="Envía Reporte" }} 
+            template="bootstrap3-horizontal" label-class="col-sm-3" input-col-class="col-sm-9"  buttonContent="Envía Reporte" }}
 
             </div>
-            
-        {{/if}}    
+
+        {{/if}}
     </div>
-  
+
 </template>
 
 
 <template name="uploadForm">
-    {{#with currentUpload}} 
+    {{#with currentUpload}}
         Uploading <b>{{file.name}}</b>:
-        <span id="progress">{{progress.get}}%</span> 
+        <span id="progress">{{progress.get}}%</span>
     {{else}}
-        <input id="fileInput" type="file" /> 
+        <input id="fileInput" type="file" />
     {{/with}}
 </template>

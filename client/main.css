@@ -568,6 +568,12 @@ p {
 {
   margin-top: 2em;
   background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/resources/pattern_n3.png");
+  opacity: 0.80;
+  -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadeIn 2s; /* Firefox < 16 */
+      -ms-animation: fadeIn 2s; /* Internet Explorer */
+       -o-animation: fadeIn 2s; /* Opera < 12.1 */
+          animation: fadeIn 2s;
 }
 
 .lsa-sangria

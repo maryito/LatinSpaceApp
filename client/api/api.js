@@ -26,5 +26,10 @@ Template.api.events({
 });
 
 Template.api.rendered = function () {
-    $('.lsa-table').dataTable();
+    $('.lsa-table').dataTable(
+      {
+        responsive: true,
+        lengthMenu:	[[5, 10, 20, 25, 50, -1], [5, 10, 20, 25, 50, "Todos"]]
+      }
+    );
 };

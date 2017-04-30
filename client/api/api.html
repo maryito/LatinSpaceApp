@@ -1,14 +1,14 @@
 <template name="api">
-  <div class="col-md-12">
+  <div class="col-md-12 lsa-padder">
     <table class="lsa-table table table-striped">
       <thead>
        <tr>
           <th> Country </th>
           <th> Direccion </th>
-          <th> Latitud </th>
-          <th> Logitud </th>
+          <th class="hidden-xs hidden-sm"> Latitud </th>
+          <th class="hidden-xs hidden-sm"> Logitud </th>
           <th> Tipo Deslizamiento </th>
-          <th> Tamaño </th>
+          <th class="hidden-xs hidden-sm"> Tamaño </th>
           <th> Fecha </th>
           <th> Alarma </th>
         </tr>
@@ -18,10 +18,10 @@
         <tr>
           <td> {{countryname}} </td>
           <td> {{nearest_places}} </td>
-          <td> {{latitude}} </td>
-          <td> {{longitude}} </td>
+          <td class="hidden-xs hidden-sm"> {{latitude}} </td>
+          <td class="hidden-xs hidden-sm"> {{longitude}} </td>
           <td> {{landslide_type}} </td>
-          <td> {{landslide_size}} </td>
+          <td class="hidden-xs hidden-sm"> {{landslide_size}} </td>
           <td> {{tstamp}} </td>
           <td> {{trigger}} </td>
         </tr>

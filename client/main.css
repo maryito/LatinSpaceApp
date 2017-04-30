@@ -360,8 +360,13 @@ p {
 
 .lsa-text-container
 {
-  margin-top: 20px;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
+  margin-top: 2em;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/resources/pattern_n3.png");
+}
+
+.lsa-sangria
+{
+  margin-left: 2em;
 }
 
 /* Breathing */

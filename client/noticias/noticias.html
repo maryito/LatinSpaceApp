@@ -1,44 +1,25 @@
 <template name="noticias">
     <div class="row">
-        <h1>Ultimas alertas! </h1>
-        <div class="col-md-4">
-            {{#each Datos}}
-            <pre>
-                 Nombre {{ countryname }}
-            </pre>
-            <!--<div class="info-box bg-yellow">
-                <span class="info-box-icon"><i class="ion ion-ios-pricetag-outline"></i></span>
+        <div class="col-md-6 col-md-offset-3">
 
-                <div class="info-box-content">
-                    <span class="info-box-text"> </span>
-                    <span class="info-box-number"> # de Reportes </span>
-                    <span class="progress-description">
-                     lugar tipo de delizamiento 
-                  </span>
-                </div>
-            </div>-->
-            {{/each}}
-        </div>
-        <hr>
-        <div class="col-md-4">
-            <h1> Alertas! </h1>
-            {{#each ListaNoticias}}
-                <pre>
-                    {{usuario}}
-                </pre>
-            <div class="info-box bg-yellow">
-                <span class="info-box-icon"><i class="ion ion-ios-pricetag-outline"></i></span>
+            <h1>Ultimas alertas! </h1>
+            <ul class="list-group">
+                {{#each ListaNoticias}}
 
-                <div class="info-box-content">
-                    <span class="info-box-text">  Nombre </span>
-                    <span class="info-box-number"> # de Reportes </span>
-                    <span class="progress-description">
-                     lugar tipo de delizamiento 
-                  </span>
-                </div>
-            </div>
-            {{/each}}
-           
+                <li class="list-group-item">
+                    {{nombre}} {{direccion}} 
+                    fecha: {{fecha}} {{causa}} 
+                    estado del terreno {{estado}} 
+                    ultima actualizacion:
+                     {{fechaReporte}} Usted estuvo hay
+                    <span class="badge">SI</span>
+                    <span class="badge">No</span>
+                    <span class="badge"> # Reporte 50</span>
+                </li>
+                <br>
+                {{/each}}
+            </ul>
         </div>
+
     </div>
 </template>

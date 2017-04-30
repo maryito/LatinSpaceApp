@@ -28,6 +28,7 @@ cfs:storage-adapter@0.1.1
 cfs:ui@0.1.3
 check@1.2.5
 coffeescript@1.0.17
+d3@1.0.0
 dburles:google-maps@1.1.5
 ddp@1.2.5
 ddp-client@1.3.4

@@ -3,23 +3,17 @@
         <div class="col-md-6 col-md-offset-3">
 
             <h1 class="lsa-title lsa-padder"> ¡Ultimas alertas! </h1>
-            <ul class="list-group">
-                {{#each ListaNoticias}}
-
-                <li class="list-group-item list-group-background">
-                    {{nombre}} {{direccion}}
-                    fecha: {{fecha}} {{causa}}
-                    estado del terreno {{estado}}
-                    ultima actualizacion:
-                     {{fechaReporte}} Usted estuvo hay
-                    <span class="badge">SI</span>
-                    <span class="badge">No</span>
-                    <span class="badge"> # Reporte 50</span>
-                    <button> Reportar </button>
-                </li>
+            {{#each ListaNoticias}}
+            <ul class="list-group list-group-background">
+                <li class="list-group-item list-group-background"> Nombre y dirección: <span class="lsa-resaltator"> {{nombre}} {{direccion}}</span> </li>
+                <li class="list-group-item list-group-background"> Fecha: <span class="lsa-resaltator-2"> {{fecha}} {{causa}} </span></li>
+                <li class="list-group-item list-group-background"> Estado del terreno: <span class="lsa-resaltator-3"> {{estado}} </span> </li>
+                <li class="list-group-item list-group-background"> Ultima actualizacion: <span class="lsa-resaltator-4"> {{fechaReporte}} </span> </li>
+                <li class="list-group-item list-group-background"> ¿Usted estuvo ahí?: <button class="lsa-btn-confirm" style="margin:10px;"> Si </button> <button class="lsa-btn-deny" style="margin:10px;"> No </button></li>
+                <span class="badge"> # Reporte 50</span>
                 <br>
-                {{/each}}
             </ul>
+           {{/each}}
         </div>
 
     </div>

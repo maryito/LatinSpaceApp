@@ -6,6 +6,27 @@
 
 /* Custom CSS, that overrides some of the established by bootstrap, for the application */
 
+.lsa-resaltator
+{
+  color: #FFAB00;
+  font-weight: bold;
+}
+.lsa-resaltator-2
+{
+  font-weight: bold;
+}
+.lsa-resaltator-3
+{
+  color: #FF0000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.lsa-resaltator-4
+{
+  color: #0033CC;
+  font-weight: bold;
+}
+
 .badge
 {
   -webkit-animation: bounceInUp 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -568,6 +589,87 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   opacity: 0.95;
 }
 
+.lsa-btn-confirm
+{
+  background-color: transparent;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 5px 30px;
+  border: 2.5px solid #FFFFFF;
+  border-radius: 10px;
+  opacity: 0.95;
+  -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+}
+
+.lsa-btn-confirm:hover
+{
+  background-image: linear-gradient(rgba(0,255,0,0.5), rgba(0,255,0,0.5)), url("/resources/pattern_n2.png");
+  border: 2.5px solid #000000;
+  box-shadow: 0 12px 16px 0 rgba(0,255,0,0.24), 0 17px 50px 0 rgba(0,255,0,0.24);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  opacity: 0.95;
+}
+
+.lsa-btn-confirm:active
+{
+  background-image: linear-gradient(rgba(0,255,0,0.5), rgba(0,255,0,0.5)), url("/resources/pattern_n2.png");
+  border: 2.5px solid #000000;
+  box-shadow: 0 12px 16px 0 rgba(0,255,0,0.24), 0 17px 50px 0 rgba(0,255,0,0.24);
+  opacity: 0.95;
+}
+
+
+.lsa-btn-confirm:focus
+{
+  background-image: linear-gradient(rgba(0,255,0,0.5), rgba(0,255,0,0.5)), url("/resources/pattern_n2.png");
+  border: 2.5px solid #000000;
+  box-shadow: 0 12px 16px 0 rgba(0,255,0,0.24), 0 17px 50px 0 rgba(0,255,0,0.24);
+  opacity: 0.95;
+}
+
+.lsa-btn-deny
+{
+  background-color: transparent;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 5px 30px;
+  border: 2.5px solid #FFFFFF;
+  border-radius: 10px;
+  opacity: 0.95;
+  -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+}
+
+.lsa-btn-deny:hover
+{
+  background-image: linear-gradient(rgba(0,0,255,0.5), rgba(0,0,255,0.5)), url("/resources/pattern_n2.png");
+  border: 2.5px solid #000000;
+  box-shadow: 0 12px 16px 0 rgba(0,0,255,0.19), 0 17px 50px 0 rgba(0,0,255,0.19);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  opacity: 0.95;
+}
+
+.lsa-btn-deny:active
+{
+  background-image: linear-gradient(rgba(0,0,255,0.5), rgba(0,0,255,0.5)), url("/resources/pattern_n2.png");
+  border: 2.5px solid #000000;
+  box-shadow: 0 12px 16px 0 rgba(0,0,255,0.19), 0 17px 50px 0 rgba(0,0,255,0.19);
+  opacity: 0.95;
+}
+
+
+.lsa-btn-deny:focus
+{
+  background-image: linear-gradient(rgba(0,0,255,0.5), rgba(0,0,255,0.5)), url("/resources/pattern_n2.png");
+  border: 2.5px solid #000000;
+  box-shadow: 0 12px 16px 0 rgba(0,0,255,0.19), 0 17px 50px 0 rgba(0,0,255,0.19);
+  opacity: 0.95;
+}
 
 
 /* Text Fader */

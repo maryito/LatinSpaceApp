@@ -28,7 +28,7 @@ Template.mapa.onRendered(function () {
       var mapUrl = 'http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png';
       var mapTiles = L.tileLayer(mapUrl);
       var map = L.map('map', {
-        zoom: 10,
+        zoom: 5,
         center: [8.997669, -79.526854],
         scrollWheelZoom: true,
         layers: [mapTiles]
@@ -58,7 +58,7 @@ Template.mapa.onRendered(function () {
         circle.bindPopup("<b>"+ element.near +"</b><br>"+ element.trigger +"<br>"+ element.landslide_type +".").openPopup();
 
         }, this);
-        //fitWorld( <fitBounds options>) 
+        //fitWorld( <fitBounds options>)
         map._layersMinZoom=3;
         map.spin(false);
 

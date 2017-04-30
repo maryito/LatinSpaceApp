@@ -52,7 +52,7 @@ Template.mapa.onRendered(function () {
         var circle = L.circle([element.latitude, element.longitude], {
             color: getRandomColor(),
             fillOpacity: 0.85,
-            radius: 70000
+            radius: 25000
         }).addTo(map);
         // Finally bind the containerNode to the popup
         circle.bindPopup("<b>"+ element.near +"</b><br>"+ element.trigger +"<br>"+ element.landslide_type +".").openPopup();

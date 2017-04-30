@@ -37,7 +37,6 @@ Template.uploadForm.helpers({
 
 Template.uploadForm.events({
   'change #fileInput': function (e, template) {
-<<<<<<< HEAD
     if (contadorFoto < 5) {
 
       if (e.currentTarget.files && e.currentTarget.files[0]) {
@@ -47,7 +46,7 @@ Template.uploadForm.events({
           file: e.currentTarget.files[0],
           streams: 'dynamic',
           chunkSize: 'dynamic',
-          reporteId: Session.get('imagenForm') 
+          reporteId: Session.get('imagenForm')
         }, false);
 
         upload.on('start', function () {
@@ -60,7 +59,7 @@ Template.uploadForm.events({
           } else {
             contadorFoto += 1;
             alert('Foto #'+ contadorFoto +" nombre "+ fileObj.name +" Subida con Éxito");
-            
+
           }
           template.currentUpload.set(false);
         });
@@ -69,7 +68,7 @@ Template.uploadForm.events({
       }
     } else{
       alert("Alcanzo el maximo de fotos permitidas.")
-    
+
       Meteor.setInterval( () => {
         console.log("reenviando...")
         contadorFoto = 0;

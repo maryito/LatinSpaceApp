@@ -1,7 +1,8 @@
 Template.formularios.onCreated( function(){
     Session.set('FormularioListo', false);
       GoogleMaps.load({
-        key: "AIzaSyCTmQZ_IJoqteedF6XDFjdsaCgaSxDnhik"
+        key: "AIzaSyCTmQZ_IJoqteedF6XDFjdsaCgaSxDnhik",
+        template: "places" 
      });
 })
 
@@ -57,12 +58,12 @@ AutoForm.hooks({
   reporteFormDelizamiento: {
       // Called when any submit operation succeeds
   onSuccess: function(formType, result) {
-      console.log( result )
+      console.log("Agregando reporte ", result )
     
   },
   // Called when any submit operation fails
   onError: function(formType, error) {
-    console.log( error )
+    console.log("Error reporte ",error )
   },
   }
 });

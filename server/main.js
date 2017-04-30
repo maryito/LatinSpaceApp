@@ -20,6 +20,16 @@ if (Api.find().count() === 0 ){
 }
 
 
+    // _.each( data, (x) => {
+    //   if ( x.longitude){
+    //      d = x
+    //     console.log(" data ", d, " log ". x.latitude );
+
+    //   }else {
+    //     console.log( " logitud ")
+    //   }
+    // })
+
 });
 
 //Images = new FS.Collection("images",{

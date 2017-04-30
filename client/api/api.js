@@ -12,8 +12,8 @@ Template.api.helpers({
   }
 });
 
-Template.api.events({ 
-  'click #apiMas': function(event, template) { 
+Template.api.events({
+  'click #apiMas': function(event, template) {
      event.preventDefault();
      const x = Session.get('+Api') + 10;
      Session.set('+Api', x)
@@ -22,5 +22,9 @@ Template.api.events({
     event.preventDefault();
     let data = $('#'+this._id).data('id')
     console.log(  " id  mapa ", data);
-  } 
+  }
 });
+
+Template.api.rendered = function () {
+    $('.lsa-table').dataTable();
+};

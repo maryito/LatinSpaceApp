@@ -1,16 +1,19 @@
 <template name="api">
   <div class="col-md-12">
-    <table class="table table-hover lsa-table">
-      <tbody>
-        <tr>
+    <table class="lsa-table table table-striped">
+      <thead>
+       <tr>
           <th> Country </th>
           <th> Direccion </th>
           <th> Latitud </th>
           <th> Logitud </th>
           <th> Tipo Deslizamiento </th>
           <th> Tamaño </th>
-          <th> Accion </th>
+          <th> Fecha </th>
+          <th> Alarma </th>
         </tr>
+      </thead>
+      <tbody>
         {{#each data }}
         <tr>
           <td> {{countryname}} </td>
@@ -19,16 +22,12 @@
           <td> {{longitude}} </td>
           <td> {{landslide_type}} </td>
           <td> {{landslide_size}} </td>
-          <td> {{landslide_size}} </td>
-          <td> <button class="mapaIdBt lsa-btn" id="{{ _id }}" data-id="{{ _id }}"> Mostrar </button> </td>
+          <td> {{tstamp}} </td>
+          <td> {{trigger}} </td>
         </tr>
         {{/each}}
       </tbody>
-
     </table>
-    <div class="col-md-12">
-      <button id="apiMas" class="btn btn-primary btn-lg lsa-btn"> Ver mas</button>
-    </div>
   </div>
 
 

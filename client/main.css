@@ -61,7 +61,7 @@ a:hover
   color:#FF3434;
   font-family: 'Roboto', sans-serif;
   font-size:1.1em;
-  text-shadow: 0 0 0.5px #000000;
+  text-shadow: none;
 }
 a:active
 {
@@ -72,29 +72,83 @@ a:active
 
 .lsa-bar
 {
-  background-image: url("/resources/pattern_n1.png");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n1.png");
   background-position: 0px 0px;
   animation: lsa-stargazer 40s linear infinite;
   -ms-animation: lsa-stargazer 40s linear infinite;
   -moz-animation: lsa-stargazer 40s linear infinite;
   -webkit-animation: lsa-stargazer 40s linear infinite;
-  opacity: 0.5;
   box-shadow: 5px 5px 5px #000000;
   opacity:0.90;
   border:none;
   color: #FFFFFF;
 }
 
+/* navbar overrider */
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+.navbar-default .navbar-text {
+  color: #777;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #000000;
+  background-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+/* end navbar overrider */
+
 .lsa-table
 {
-  background-color: #000000;
-  margin-top: 10px;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/resources/pattern_n2.png");
+  margin-top: 20px;
+  width:100%;
+	border-collapse: collapse;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px #000000;
+  opacity: 0.78;
   -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: fadeIn 2s; /* Firefox < 16 */
       -ms-animation: fadeIn 2s; /* Internet Explorer */
        -o-animation: fadeIn 2s; /* Opera < 12.1 */
           animation: fadeIn 2s;
 }
+
+.lsa-table > tbody > tr:hover
+{
+  background-image: linear-gradient(rgba(64,64,64,0.5), rgba(64,64,64,0.5)), url("/resources/pattern_n2.png");
+}
+
+/* Bootstrap table overrider */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-image: linear-gradient(rgba(17, 10, 118,0.5), rgba(17, 10, 118,0.5)), url("/resources/pattern_n2.png");
+}
+
+.table-striped > tbody > tr:hover {
+  background-image: linear-gradient(rgba(64,64,64,0.5), rgba(64,64,64,0.5)), url("/resources/pattern_n2.png");
+}
+
 
 /* Depende del dispositivo y el tipo de navegador, realiza una escala para ocupar el tamaño de la pantalla*/
 @-ms-viewport {
@@ -134,7 +188,7 @@ a:active
    top:0;
    bottom:0;
    width:100%;
-   border: 1px solid #000;
+   border: 2px solid #000;
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
    -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
       -moz-animation: fadeIn 2s; /* Firefox < 16 */
@@ -271,25 +325,64 @@ a:active
 
 .lsa-btn-login
 {
-  background-color: #E7E7E7;
+  background-image: linear-gradient(rgba(231, 231, 231,0.5), rgba(231, 231, 231,0.5)), url("/resources/pattern_n2.png");
   border: 1px solid #000;
+  border-left-color: transparent;
+  border-right-color: transparent;
   margin-top: 10px;
   padding: 5px;
+  opacity: none;
+  text-shadow: none;
 }
 
 .lsa-btn
 {
-  background-color: #FF0000;
-  border: 1px solid #000;
-  padding: 5px;
+  background-color: transparent;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #FF1A1A;
+  padding: 5px 30px;
+  border: 2.5px solid #FF0000;
+  border-radius: 10px;
+  opacity: 0.95;
+  -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+}
+
+.lsa-btn:hover
+{
+  background-image: linear-gradient(rgba(225,0,0,0.5), rgba(225,0,0,0.5)), url("/resources/pattern_n2.png");
+  border: 2.5px solid #000000;
+  box-shadow: 0 12px 16px 0 rgba(225,0,0,0.24), 0 17px 50px 0 rgba(225,0,0,0.19);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
   opacity: 0.95;
 }
 
+.lsa-btn:active
+{
+  background-image: linear-gradient(rgba(225,0,0,0.5), rgba(225,0,0,0.5)), url("/resources/pattern_n2.png");
+  border: 2.5px solid #000000;
+  box-shadow: 0 12px 16px 0 rgba(225,0,0,0.24), 0 17px 50px 0 rgba(225,0,0,0.19);
+  opacity: 0.95;
+}
+
+
+.lsa-btn:focus
+{
+  background-image: linear-gradient(rgba(225,0,0,0.5), rgba(225,0,0,0.5)), url("/resources/pattern_n2.png");
+  border: 2.5px solid #000000;
+  box-shadow: 0 12px 16px 0 rgba(225,0,0,0.24), 0 17px 50px 0 rgba(225,0,0,0.19);
+  opacity: 0.95;
+}
+
+
+
 /* Text Fader */
 p {
-    margin-top: 25px;
-    font-size: 21px;
-    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-align: justify;
     -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadeIn 2s; /* Firefox < 16 */
         -ms-animation: fadeIn 2s; /* Internet Explorer */
@@ -297,116 +390,140 @@ p {
             animation: fadeIn 2s;
 }
 
+.lsa-text-container
+{
+  margin-top: 2em;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/resources/pattern_n3.png");
+}
+
+.lsa-sangria
+{
+  margin-left: 2em;
+}
+
 /* Breathing */
 @-webkit-keyframes breath{
   0%{
-    background:#000000 url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #FF0000;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
+    text-shadow: 2px 2px 2px #004BC4;
   }
 
   20%{
+    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #000000;
   }
 
   50%{
+    background-image: linear-gradient(rgba(85,94,221,0.5), rgba(85,94,221,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #000000;
   }
 
   80%{
+    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #000000;
   }
 
   100%{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
-    text-shadow: 2px 2px 2px #FF0000;
+    text-shadow: 2px 2px 2px #004BC4;
   }
 
 }
 
 @-moz-keyframes breath{
   0%{
-    background:#292929 url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #FF0000;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
+    text-shadow: 2px 2px 2px #004BC4;
   }
 
   20%{
+    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #000000;
   }
 
   50%{
+    background-image: linear-gradient(rgba(85,94,221,0.5), rgba(85,94,221,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #000000;
   }
 
   80%{
+    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #000000;
   }
 
   100%{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
-    text-shadow: 2px 2px 2px #FF0000;
+    text-shadow: 2px 2px 2px #004BC4;
   }
 
 }
 @-o-keyframes breath{
   0%{
-    background:#292929 url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #FF0000;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
+    text-shadow: 2px 2px 2px #004BC4;
   }
 
   20%{
+    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #000000;
   }
 
   50%{
+    background-image: linear-gradient(rgba(85,94,221,0.5), rgba(85,94,221,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #000000;
   }
 
   80%{
+    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #000000;
   }
 
   100%{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
-    text-shadow: 2px 2px 2px #FF0000;
+    text-shadow: 2px 2px 2px #004BC4;
   }
+
 }
 @keyframes breath{
   0%{
-    background:#292929 url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #FF0000;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
+    text-shadow: 2px 2px 2px #004BC4;
   }
 
   20%{
+    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #000000;
   }
 
   50%{
+    background-image: linear-gradient(rgba(85,94,221,0.5), rgba(85,94,221,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #000000;
   }
 
   80%{
+    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #000000;
   }
 
   100%{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
     color: #FFFFFF;
-    text-shadow: 2px 2px 2px #FF0000;
+    text-shadow: 2px 2px 2px #004BC4;
   }
 
 }

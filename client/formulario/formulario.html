@@ -2,12 +2,41 @@
     <br>
     <br>
     <br>
-    <!-- ejemplo de formulario-->
-    <!--{{> quickForm id="insertInfoForm" schema=Schemas.deslizamineto type="normal"
-    meteormethod="formularioAdd" template="bootstrap3-horizontal" 
-    label-class="col-sm-3" input-col-class="col-sm-9"
-    }}-->
-     {{> quickForm schema=Schemas.deslizamineto   doc=this id="updateBookForm" type="method"
-      meteormethod="formularioAdd" template="bootstrap3-horizontal" 
-    label-class="col-sm-3" input-col-class="col-sm-9"}}
+      <div>
+        {{#if ReadyForm }}
+         <h1> Paso 2/2 </h1>
+           {{else}} 
+             <h1> Paso 1/2 </h1>
+        {{/if}}
+
+    </div>
+    <div class="col-md-6 col-md-offset-3 ">
+        <h1> Reporte de Deslizamiento</h1>
+        {{#if ReadyForm }}
+        <div class="form-group">
+            
+            <h1> Fotos del Incidente </h1>
+            <label class="control-label"> Agregar Foto. </label>
+            {{> uploadForm}}
+        </div>
+        {{else}} 
+            <div>
+            {{> quickForm schema=Schemas.deslizamineto doc=this id="reporteFormDelizamiento" type="method" meteormethod="formularioAdd"
+            template="bootstrap3-horizontal" label-class="col-sm-3" input-col-class="col-sm-9"  buttonContent="Envía Reporte" }} 
+
+            </div>
+            
+        {{/if}}    
+    </div>
+  
+</template>
+
+
+<template name="uploadForm">
+    {{#with currentUpload}} 
+        Uploading <b>{{file.name}}</b>:
+        <span id="progress">{{progress.get}}%</span> 
+    {{else}}
+        <input id="fileInput" type="file" /> 
+    {{/with}}
 </template>

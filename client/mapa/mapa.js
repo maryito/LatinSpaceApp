@@ -2,7 +2,7 @@
 // Using a template's rendered callback
 Meteor.startup(function(){
   Mapbox.load({
-      gl: true
+          gl: true
     }
 
     );

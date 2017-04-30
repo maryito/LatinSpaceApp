@@ -51,14 +51,14 @@ Template.mapa.onRendered(function () {
         // add circle marker to map
         var circle = L.circle([element.latitude, element.longitude], {
             color: getRandomColor(),
-            fillColor: getRandomColor(),
-            fillOpacity: 0.8,
+            fillOpacity: 0.85,
             radius: 70000
         }).addTo(map);
         // Finally bind the containerNode to the popup
-        circle.bindPopup("<b>"+ element.near +"</b><br>"+ element.tirgger +".").openPopup();
+        circle.bindPopup("<b>"+ element.near +"</b><br>"+ element.trigger +"<br>"+ element.landslide_type +".").openPopup();
 
         }, this);
+        //fitWorld( <fitBounds options>) 
         map._layersMinZoom=3;
         map.spin(false);
 

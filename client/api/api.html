@@ -9,6 +9,7 @@
           <th> Logitud </th>
           <th> Tipo Deslizamiento </th>
           <th> Tamaño </th>
+          <th> Accion </th>
         </tr>
         {{#each data }}
         <tr>
@@ -18,6 +19,8 @@
           <td> {{longitude}} </td>
           <td> {{landslide_type}} </td>
           <td> {{landslide_size}} </td>
+          <td> {{landslide_size}} </td>
+          <td> <button class="mapaIdBt" id="{{ _id }}" data-id="{{ _id }}"> Mostrar </button> </td>
         </tr>
         {{/each}}
       </tbody>

@@ -37,7 +37,6 @@ Template.uploadForm.helpers({
 
 Template.uploadForm.events({
   'change #fileInput': function (e, template) {
-<<<<<<< HEAD
     if (contadorFoto < 5) {
 
       if (e.currentTarget.files && e.currentTarget.files[0]) {

@@ -46,12 +46,18 @@
 .list-group-background
 {
   opacity: 0.85;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n1.png");
-  -webkit-animation: bounceInRight 2s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: bounceInRight 2s; /* Firefox < 16 */
-      -ms-animation: bounceInRight 2s; /* Internet Explorer */
-       -o-animation: bounceInRight 2s; /* Opera < 12.1 */
-          animation: bounceInRight 2s;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/resources/pattern_n1.png");
+  -webkit-animation: bounceInRight 2s, lsa-stargazer 5s linear infinite; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: bounceInRight 2s, lsa-stargazer 5s linear infinite; /* Firefox < 16 */
+      -ms-animation: bounceInRight 2s, lsa-stargazer 5s linear infinite; /* Internet Explorer */
+       -o-animation: bounceInRight 2s, lsa-stargazer 5s linear infinite; /* Opera < 12.1 */
+          animation: bounceInRight 2s, lsa-stargazer 5s linear infinite;
+}
+
+.lsa-no-bg
+{
+  background: none;
+  border: none;
 }
 
 body

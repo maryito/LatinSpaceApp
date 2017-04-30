@@ -1,4 +1,3 @@
-
 Template.formularios.onCreated( function(){
     Session.set('FormularioListo', false);
     /*  GoogleMaps.load({
@@ -7,29 +6,23 @@ Template.formularios.onCreated( function(){
      }); */
 })
 
-Template.formularios.onRendered( function(){
+
+Template.formulariomapa.onCreated( function(){
+  /*
   L.Icon.Default.imagePath = '/packages/bevanhunt_leaflet/images/';
-  var mapUrl = 'http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png';
-  var mapTiles = L.tileLayer(mapUrl);
-  var map = L.map('formmap', {
-    zoom: 5,
-    center: [0,0],
-    scrollWheelZoom: true,
-    layers: [mapTiles]
-  });
+  var map = L.map('mapa2');
+  L.tileLayer.provider('Stamen.Watercolor').addTo(map);
   map.spin(true);
   map._layersMinZoom=3;
-  map.setMaxBounds([[84.67351256610522, -174.0234375], [-64.77413, 15.82031]]);
-  map.spin(false);
+  map.spin(false); */
 })
 
 Template.formularios.helpers({
-  ReadyForm() {
-    return Session.get('FormularioListo');
-  }
+   ReadyForm() {
+       return  Session.get('FormularioListo');
+   }
 })
 
-let contadorFoto = 0;
 
 Template.uploadForm.onCreated(function () {
   this.currentUpload = new ReactiveVar(false);
@@ -44,6 +37,7 @@ Template.uploadForm.helpers({
 
 Template.uploadForm.events({
   'change #fileInput': function (e, template) {
+<<<<<<< HEAD
     if (contadorFoto < 5) {
 
       if (e.currentTarget.files && e.currentTarget.files[0]) {
@@ -83,7 +77,6 @@ Template.uploadForm.events({
       }, 2000)
         Router.go('home')
     }
-
   }
 });
 
@@ -100,11 +93,10 @@ AutoForm.hooks({
 
       }
 
-
-    },
-    // Called when any submit operation fails
-    onError: function (formType, error) {
-      console.log("Error reporte ", error)
-    },
+  },
+  // Called when any submit operation fails
+  onError: function(formType, error) {
+    console.log("Error reporte ",error )
+  },
   }
 });

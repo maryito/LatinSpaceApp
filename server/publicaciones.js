@@ -1,7 +1,7 @@
 Meteor.publish('Api.todo', function() {
-
-    
-    return data
+    return Api.find({}, {
+        $sort: { tstamp: 1 }
+    })
 });
 
 Meteor.publish('Api.inicial', function( max) {

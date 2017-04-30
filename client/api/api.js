@@ -2,7 +2,7 @@ import { Template } from 'meteor/templating';
 import './api.html';
 
 Template.api.onCreated(function () {
-  Session.set('+Api', 30)
+  Session.set('+Api', 10000)
 })
 
 Template.api.helpers({

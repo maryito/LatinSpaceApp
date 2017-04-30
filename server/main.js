@@ -3,11 +3,11 @@ import { Meteor } from 'meteor/meteor';
 
 Meteor.startup(() => {
   // code to run on server at startup
+size = Api.find().count();
 
-if (Api.find().count() === 0 ){
-  const url = "https://data.nasa.gov/resource/tfkf-kniw.json"
+if ( size === 0 ){ 
+   const url = "https://data.nasa.gov/resource/tfkf-kniw.json"
   const data = HTTP.call("GET",url)
-
   _.each( data.data, ( obj ) => {
 
     if( obj.country){

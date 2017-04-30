@@ -38,7 +38,11 @@ fourseven:scss
 yogiben:autoform-file
 ostrio:files
 j4507:datatables-bootstrap-3
+<<<<<<< HEAD
 mdg:geolocation
 check
 bruceborrett:autoform-map
 underscore
+=======
+d3
+>>>>>>> 634c8702e3e3d9fe3edd387d2374cc868650e366

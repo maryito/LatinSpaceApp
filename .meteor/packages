@@ -34,8 +34,11 @@ service-configuration
 accounts-google
 pauloborges:mapbox@2.2.3_2
 aldeed:autoform@5.8.1
-yogiben:autoform-map
 fourseven:scss
 yogiben:autoform-file
 ostrio:files
 j4507:datatables-bootstrap-3
+mdg:geolocation
+check
+bruceborrett:autoform-map
+underscore

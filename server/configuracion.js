@@ -12,18 +12,25 @@ ServiceConfiguration.configurations.remove({
     service: "google"
 });
 ServiceConfiguration.configurations.insert({
-  service: 'google',
-  clientId: '8732432343841634324-234239j7df91mg5a8232wq75cgdsff38ekoj.apps.googleusercontent.com',
-  secret: 'e8sdf4dsST-VfsdSAXUh8HHSSWLJDSJ'
+    service: 'google',
+    clientId: '70399859572-oiqp836ptu0v2a0vahgbnl0ir1n3211l.apps.googleusercontent.com',
+    secret: 'YYBZR-1lGk8j2LQxHE3q3si-'
 });
 
 Accounts.onCreateUser(function (options, user) {
 
-    if (!user.services.facebook) {
+    if (user.services.facebook) {
+        user.username = user.services.facebook.name;
+        user.emails = [{ address: user.services.facebook.email }];
+
         return user;
     }
-    user.username = user.services.facebook.name;
-    user.emails = [{address: user.services.facebook.email}];
+    if (user.services.google) {
+        console.log(user );
+         user.username = user.services.google.name;
+         user.emails = [{address: user.services.google.email}];
 
+        return user;
+    }
     return user;
 });

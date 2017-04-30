@@ -1,6 +1,6 @@
 <template name="api">
   <div class="col-md-12">
-    <table class="table ">
+    <table class="table lsa-table">
       <tbody>
         <tr>
           <th> Country </th>
@@ -20,14 +20,14 @@
           <td> {{landslide_type}} </td>
           <td> {{landslide_size}} </td>
           <td> {{landslide_size}} </td>
-          <td> <button class="mapaIdBt" id="{{ _id }}" data-id="{{ _id }}"> Mostrar </button> </td>
+          <td> <button class="mapaIdBt lsa-btn" id="{{ _id }}" data-id="{{ _id }}"> Mostrar </button> </td>
         </tr>
         {{/each}}
       </tbody>
 
     </table>
     <div class="col-md-12">
-      <button id="apiMas" class="btn btn-primary btn-lg"> Ver mas</button>
+      <button id="apiMas" class="btn btn-primary btn-lg lsa-btn"> Ver mas</button>
     </div>
   </div>
 
@@ -36,7 +36,7 @@
   <!--{{data}}-->
   <!--{{#each data }}
       {{countryname}} {{countrycode}} {{latitude}} {{longitude }}
-      {{trigger}} 
+      {{trigger}}
 
    {{/each}}-->
   <!--</pre>-->

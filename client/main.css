@@ -311,7 +311,20 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 
 /* lsa datatable end*/
 
-
+/* lsa-d3-graph */
+.lsa-feature {
+	fill: none;
+	stroke: grey;
+	stroke-width: 1px;
+  	stroke-linejoin: round;
+}
+.lsa-mesh {
+	fill: none;
+		stroke: lightgrey;
+		stroke-width: 2px;
+		stroke-linejoin: round;
+}
+/* end lsa-d3-graph */
 
 /* Depende del dispositivo y el tipo de navegador, realiza una escala para ocupar el tamaño de la pantalla*/
 @-ms-viewport {

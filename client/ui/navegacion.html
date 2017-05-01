@@ -12,11 +12,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="{{#if currentRouteIs 'home'}}active{{/if}}"><a href="/" > Inicio</a></li>
-            <li class="{{#if currentRouteIs 'api'}}active{{/if}}"><a href="/api"> Datos de Deslizamientos</a></li>
-            <li class="{{#if currentRouteIs 'formularios'}}active{{/if}}"><a href="/formularios"> Reportar</a></li>
-            <li class="{{#if currentRouteIs 'noticias'}}active{{/if}}"><a href="/noticias"> Noticias</a></li>
-            <li class="{{#if currentRouteIs 'sabiasque'}}active{{/if}}"><a href="/sabiasque"> ¿Sabias Que?</a></li>
+            <li class="{{#if currentRouteIs 'home'}}active{{/if}}"><a href="/" > {{_ "nav_home"}}</a></li>
+            <li class="{{#if currentRouteIs 'api'}}active{{/if}}"><a href="/api"> {{_ "nav_land"}}</a></li>
+            <li class="{{#if currentRouteIs 'formularios'}}active{{/if}}"><a href="/formularios"> {{_ "nav_rep"}}</a></li>
+            <li class="{{#if currentRouteIs 'noticias'}}active{{/if}}"><a href="/noticias"> {{_ "nav_new"}}</a></li>
+            <li class="{{#if currentRouteIs 'sabiasque'}}active{{/if}}"><a href="/sabiasque">{{_ "nav_know"}}</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right lsa-btn-login">
             <li class="active">{{> loginButtons}}</li>

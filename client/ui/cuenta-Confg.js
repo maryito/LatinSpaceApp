@@ -33,30 +33,7 @@ Accounts.ui.config(
             return false;
           } else { return true; }
         },
-      },{
-        fieldName: 'roles',
-        fieldLabel: 'Perfil',
-        inputType: 'select',
-        showFieldLabel: true,
-        empty: 'Por favor seleccione la perfil',
-        data: [{
-          id: 1,
-          label: 'Estudiantes',
-          value: 'estudiante',
-        }, {
-          id: 2,
-          label: 'Profesor',
-          value: 'profesor',
-        }], 
-        visible: true,
-        validate ( value, errorFunction) {
-          // agregar esquemas
-          if (!value) {
-            errorFunction('Por favor ingrese el perfil');
-            return false;
-          } else { return true; }
-        },
-      },
+      }
     ],
   });
 

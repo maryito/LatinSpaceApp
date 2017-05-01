@@ -12,7 +12,6 @@ Template.noticias.helpers({
       creador =  Meteor.userId();
       usu =  this.contribuidores.indexOf(''+Meteor.userId() )
       
-      console.log( this.contribuidores, " usuario ", usu);
       if ( usu !== 1 ){
           return true
       }else {

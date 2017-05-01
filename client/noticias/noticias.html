@@ -7,10 +7,20 @@
             <ul class="list-group list-group-background">
                 <li class="list-group-item list-group-background"> Nombre y dirección: <span class="lsa-resaltator"> {{nombre}} {{direccion}}</span> </li>
                 <li class="list-group-item list-group-background"> Fecha: <span class="lsa-resaltator-2"> {{fecha}} {{causa}} </span></li>
+                <li class="list-group-item list-group-background"> Muertes o Heridos: <span class="lsa-resaltator-2"> {{bajas}}  </span></li>
                 <li class="list-group-item list-group-background"> Estado del terreno: <span class="lsa-resaltator-3"> {{estado}} </span> </li>
                 <li class="list-group-item list-group-background"> Ultima actualizacion: <span class="lsa-resaltator-4"> {{fechaReporte}} </span> </li>
-                <li class="list-group-item list-group-background"> ¿Usted estuvo ahí?: <button class="lsa-btn-confirm" style="margin:10px;"> Si </button> <button class="lsa-btn-deny" style="margin:10px;"> No </button></li>
-                <span class="badge"> # Reporte 50</span>
+               {{#if currentUser}}
+                {{#if creador}}
+                <li class="list-group-item list-group-background"> ¿Usted estuvo ahí?: <button class="lsa-btn-confirm" id="btMAs" data-id="{{_id}}"  style="margin:10px;"> Si </button> <button  id="btMenos" data-id="{{_id}}" class="lsa-btn-deny" style="margin:10px;"> No </button></li>
+                {{else}}
+                    <li class="list-group-item list-group-background"> Gracias por tu colaboracíon. </li>
+                {{/if}}
+                <span class="badge"> # Reporte {{ reportes }}</span>
+               {{else}}
+                <li class="list-group-item list-group-background"> Registrate o Inicia sesión para colaborar con tu opiníon. </li>
+
+                {{/if}}
                 <br>
             </ul>
            {{/each}}

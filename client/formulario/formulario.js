@@ -35,6 +35,7 @@ Template.uploadForm.helpers({
 
 });
 
+let contadorFoto = 0;
 Template.uploadForm.events({
   'change #fileInput': function (e, template) {
     if (contadorFoto < 5) {
@@ -46,7 +47,9 @@ Template.uploadForm.events({
           file: e.currentTarget.files[0],
           streams: 'dynamic',
           chunkSize: 'dynamic',
-          reporteId: Session.get('imagenForm')
+          meta: {
+             reporteId: Session.get('imagenForm')
+          }         
         }, false);
 
         upload.on('start', function () {

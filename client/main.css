@@ -64,10 +64,10 @@ body
 {
   background-image: url("/resources/pattern_n4.png");
   background-position: 0px 0px;
-  -webkit-animation: breath 30s linear infinite, lsa-stargazer-2 20s linear infinite;
-	-moz-animation: breath 30s linear infinite, lsa-stargazer-2 20s linear infinite;
-  -o-animation: breath 30s linear infinite, lsa-stargazer-2 20s linear infinite;
-  animation: breath 30s linear infinite, lsa-stargazer-2 20s linear infinite;
+  -webkit-animation: breath 30s linear infinite, lsa-stargazer-2 50s linear infinite;
+	-moz-animation: breath 30s linear infinite, lsa-stargazer-2 50s linear infinite;
+  -o-animation: breath 30s linear infinite, lsa-stargazer-2 50s linear infinite;
+  animation: breath 30s linear infinite, lsa-stargazer-2 50s linear infinite;
   color: #FFFFFF;
 }
 
@@ -215,7 +215,7 @@ table.dataTable {
   border-collapse: collapse;
   border: none;
   border-radius: 25px;
-  box-shadow: 10px 10px 5px #000000;
+  box-shadow: 0 12px 16px 0 rgba(0,0,255,0.19), 0 17px 50px 0 rgba(0,0,255,0.19);
   opacity: 0.78;
   -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: fadeIn 2s; /* Firefox < 16 */
@@ -401,6 +401,14 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
     padding: 25px 20px 20px 20px;
 }
 
+.lsa-flag
+{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 #map
 {
    position:absolute;
@@ -408,7 +416,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
    bottom:0;
    width:100%;
    border: 2px solid #000;
-   box-shadow: 10px 10px 5px rgba(0,0,0,0.9);
+   box-shadow: 0 12px 16px 0 rgba(0,0,255,0.19), 0 17px 50px 0 rgba(0,0,255,0.19);
    -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
       -moz-animation: fadeIn 2s; /* Firefox < 16 */
        -ms-animation: fadeIn 2s; /* Internet Explorer */
@@ -427,6 +435,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   padding: 0px;
   position: relative;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -446,102 +455,6 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
     display: block;
 }
 
-.user-dropdown {
-    /* Size and position */
-    position: relative; /* Enable absolute positionning for children and pseudo elements */
-    width: 200px;
-    margin: 0 auto;
-    padding: 10px 15px;
-
-    /* Styles */
-    background: #fff;
-    border-left: 5px solid grey;
-    cursor: pointer;
-    outline: none;
-}
-
-.user-dropdown:after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    margin-top: -3px;
-    border-width: 6px 6px 0 6px;
-    border-style: solid;
-    border-color: grey transparent;
-}
-
-.user-dropdown .dropdown {
-  /* Size & position */
-    position: absolute;
-    top: 100%;
-    left: -5px;
-    right: 0px;
-
-    /* Styles */
-    background: white;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    list-style: none;
-
-    /* Hiding */
-    opacity: 0;
-    pointer-events: none;
-}
-
-.user-dropdown .dropdown li a {
-    display: block;
-    text-decoration: none;
-    color: #333;
-    border-left: 5px solid;
-    padding: 10px;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.user-dropdown .dropdown li:nth-child(1) a {
-    border-left-color: #00ACED;
-}
-
-.user-dropdown .dropdown li:nth-child(2) a {
-    border-left-color: #4183C4;
-}
-
-.user-dropdown .dropdown li:nth-child(3) a {
-    border-left-color: #3B5998;
-}
-
-.user-dropdown .dropdown li i {
-    margin-right: 5px;
-    color: inherit;
-    vertical-align: middle;
-}
-
-/* Hover state */
-
-.user-dropdown .dropdown li:hover a {
-    color: #FFFFFF;
-}
-
-/* Active state */
-
-.user-dropdown.active:after {
-    border-width: 0 6px 6px 6px;
-}
-
-.user-dropdown.active .dropdown {
-    opacity: 1;
-    pointer-events: auto;
-}
-
 .lsa-btn-login
 {
   background-image: linear-gradient(rgba(231, 231, 231,0.5), rgba(231, 231, 231,0.5)), url("/resources/pattern_n2.png");
@@ -552,8 +465,40 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   padding: 5px;
   opacity: none;
   text-shadow: none;
+  box-shadow: 0 12px 16px 0 rgba(0,0,255,0.19), 0 17px 50px 0 rgba(0,0,255,0.19);
 }
 
+.lsa-btn-language
+{
+  background-image: linear-gradient(rgba(231, 231, 231,0.5), rgba(231, 231, 231,0.5)), url("/resources/pattern_n2.png");
+  border: 1px solid #000;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  margin-top: 10px;
+  padding: 5px;
+  margin-left:40px;
+  opacity: none;
+  text-shadow: none;
+  color: #000000;
+  box-shadow: 0 12px 16px 0 rgba(0,0,255,0.19), 0 17px 50px 0 rgba(0,0,255,0.19);
+}
+
+@media screen and (max-width: 768px) {
+  .lsa-btn-language
+  {
+    background-image: linear-gradient(rgba(231, 231, 231,0.5), rgba(231, 231, 231,0.5)), url("/resources/pattern_n2.png");
+    border: 1px solid #000;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    margin-top: 10px;
+    margin-left: -4px;
+    padding-right: auto;
+    opacity: none;
+    text-shadow: none;
+    color: #000000;
+    box-shadow: 0 12px 16px 0 rgba(0,0,255,0.19), 0 17px 50px 0 rgba(0,0,255,0.19);
+  }
+}
 .lsa-btn
 {
   background-color: transparent;
@@ -710,126 +655,110 @@ p {
 /* Breathing */
 @-webkit-keyframes breath{
   0%{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
-    text-shadow: 2px 2px 2px #004BC4;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: 0 12px 16px 0 rgba(0,0,255,0.24);
   }
 
   20%{
-    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
+    background-image: linear-gradient(rgba(9,0,144,0.35), rgba(9,0,144,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: none;
   }
 
   50%{
-    background-image: linear-gradient(rgba(85,94,221,0.5), rgba(85,94,221,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
+    background-image: linear-gradient(rgba(85,94,221,0.35), rgba(85,94,221,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: none;
   }
 
   80%{
-    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
+    background-image: linear-gradient(rgba(9,0,144,0.35), rgba(9,0,144,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: none;
   }
 
   100%{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #004BC4;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: 12px 12px 16px 0 rgba(0,0,255,0.24);
   }
 
 }
 
 @-moz-keyframes breath{
   0%{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
-    text-shadow: 2px 2px 2px #004BC4;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: 0 12px 16px 0 rgba(0,0,255,0.24);
   }
 
   20%{
-    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
+    background-image: linear-gradient(rgba(9,0,144,0.35), rgba(9,0,144,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: none;
   }
 
   50%{
-    background-image: linear-gradient(rgba(85,94,221,0.5), rgba(85,94,221,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
+    background-image: linear-gradient(rgba(85,94,221,0.35), rgba(85,94,221,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: none;
   }
 
   80%{
-    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
+    background-image: linear-gradient(rgba(9,0,144,0.35), rgba(9,0,144,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: none;
   }
 
   100%{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #004BC4;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: 12px 12px 16px 0 rgba(0,0,255,0.24);
   }
 
 }
 @-o-keyframes breath{
   0%{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
-    text-shadow: 2px 2px 2px #004BC4;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: 0 12px 16px 0 rgba(0,0,255,0.24);
   }
 
   20%{
-    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
+    background-image: linear-gradient(rgba(9,0,144,0.35), rgba(9,0,144,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: none;
   }
 
   50%{
-    background-image: linear-gradient(rgba(85,94,221,0.5), rgba(85,94,221,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
+    background-image: linear-gradient(rgba(85,94,221,0.35), rgba(85,94,221,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: none;
   }
 
   80%{
-    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
+    background-image: linear-gradient(rgba(9,0,144,0.35), rgba(9,0,144,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: none;
   }
 
   100%{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #004BC4;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: 12px 12px 16px 0 rgba(0,0,255,0.24);
   }
 
 }
 @keyframes breath{
   0%{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
-    text-shadow: 2px 2px 2px #004BC4;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: 0 12px 16px 0 rgba(0,0,255,0.24);
   }
 
   20%{
-    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
+    background-image: linear-gradient(rgba(9,0,144,0.35), rgba(9,0,144,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: none;
   }
 
   50%{
-    background-image: linear-gradient(rgba(85,94,221,0.5), rgba(85,94,221,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
+    background-image: linear-gradient(rgba(85,94,221,0.35), rgba(85,94,221,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: none;
   }
 
   80%{
-    background-image: linear-gradient(rgba(9,0,144,0.5), rgba(9,0,144,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #000000;
+    background-image: linear-gradient(rgba(9,0,144,0.35), rgba(9,0,144,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: none;
   }
 
   100%{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/resources/pattern_n4.png");
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #004BC4;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("/resources/pattern_n4.png");
+    text-shadow: 12px 12px 16px 0 rgba(0,0,255,0.24);
   }
 
 }

@@ -1,20 +1,11 @@
 // Using a template's rendered callback
 Meteor.startup(function(){
-  /* Mapbox.load({
-      gl: true
-    }
 
-  ); */
 });
 
 
 Template.mapa.onRendered(function () {
     this.autorun(function () {
-      /*if (Mapbox.loaded()) {
-        const lat2 = "9.3247999999999998";
-        const log2 = "-79.886700000000005";
-        mapboxgl.accessToken = 'pk.eyJ1IjoibGF0aW5zcGFjZWFwcCIsImEiOiJjajIzY2UwbXAwMDBuMnFtNXgzYnRzcXQ3In0.3Q0ltAnvbNRqUAkX70OCVA';
-      } */
       function getRandomColor() {
           var letters = '0123456789ABCDEF';
           var color = '#';
@@ -36,19 +27,7 @@ Template.mapa.onRendered(function () {
       map.spin(true);
 
       Api.find({}).forEach(function(element) {
-       //element.latitude , element.longitude, element.trigger, element.near, element.landslide_type
-      // console.log( element.latitude , element.longitude, element.trigger, element.near, element.landslide_type);
-      //console.log( collection);
-
-        //mapa
-        /* let  map = new mapboxgl.Map({
-            container: 'map', // container id
-            style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-            center: [log2, lat2], // starting position
-            zoom: 8 // starting zoom
-        }); */
         //graficar puntos en el mapa
-        // add circle marker to map
         var circle = L.circle([element.latitude, element.longitude], {
             color: getRandomColor(),
             fillOpacity: 0.85,

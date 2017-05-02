@@ -4,24 +4,29 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="fa fa-bars"></span>
           </button>
           <a class="navbar-brand" href="/"> LatinSpaceApp </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="{{#if currentRouteIs 'home'}}active{{/if}}"><a href="/" > {{_ "nav_home"}}</a></li>
+            <li class="{{#if currentRouteIs 'home'}}active{{/if}}"><a href="/"> {{_ "nav_home"}}</a></li>
             <li class="{{#if currentRouteIs 'api'}}active{{/if}}"><a href="/api"> {{_ "nav_land"}}</a></li>
             <li class="{{#if currentRouteIs 'formularios'}}active{{/if}}"><a href="/formularios"> {{_ "nav_rep"}}</a></li>
             <li class="{{#if currentRouteIs 'noticias'}}active{{/if}}"><a href="/noticias"> {{_ "nav_new"}}</a></li>
             <li class="{{#if currentRouteIs 'sabiasque'}}active{{/if}}"><a href="/sabiasque">{{_ "nav_know"}}</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right lsa-btn-login">
-            <li class="active">{{> loginButtons}}</li>
+          <ul class="navbar-right lsa-btn-login">
+            <li>{{> loginButtons}}</li>
           </ul>
-        </div><!--/.nav-collapse -->
+          <div class="lsa-btn-language dropdown">
+            <li class="dropdown-toggle" data-toggle="dropdown"><span>Seleccione el lenguage</span><i class="caret"></i></li>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"><img class="lsa-flag" alt="es" src="/resources/es.png"></a></li>
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"><img class="lsa-flag" alt="en" src="/resources/en.png"></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
 </template>

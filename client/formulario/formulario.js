@@ -7,15 +7,21 @@ Template.formularios.onCreated( function(){
 })
 
 
-Template.formulariomapa.onCreated( function(){
-  /*
+Template.formulariomapa.rendered = function(){
   L.Icon.Default.imagePath = '/packages/bevanhunt_leaflet/images/';
-  var map = L.map('mapa2');
-  L.tileLayer.provider('Stamen.Watercolor').addTo(map);
+  var mapUrl = 'http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png';
+  var mapTiles = L.tileLayer(mapUrl);
+  var map = L.map('map', {
+    zoom: 5,
+    center: [8.997669, -79.526854],
+    scrollWheelZoom: true,
+    layers: [mapTiles],
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  });
   map.spin(true);
   map._layersMinZoom=3;
-  map.spin(false); */
-})
+  map.spin(false);
+};
 
 Template.formularios.helpers({
    ReadyForm() {
@@ -49,7 +55,7 @@ Template.uploadForm.events({
           chunkSize: 'dynamic',
           meta: {
              reporteId: Session.get('imagenForm')
-          }         
+          }
         }, false);
 
         upload.on('start', function () {

@@ -8,7 +8,8 @@ Meteor.publish('Api.todo', function () {
             landslide_type: 1,
             landslide_size: 1,
             tstamp: 1,
-            trigger: 1
+            trigger: 1,
+            near: 1
         },
         sort: { tstamp: -1 }
     })
@@ -24,7 +25,8 @@ Meteor.publish('Api.inicial', function (max) {
             landslide_type: 1,
             landslide_size: 1,
             tstamp: 1,
-            trigger: 1
+            trigger: 1,
+            near: 1
         },
         limit: max,
         sort: { tstamp: -1 }

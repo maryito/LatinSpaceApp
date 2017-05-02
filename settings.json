@@ -10,5 +10,8 @@
       "secret": "fbc5502494d996daa018f1ce43fd6ec2"
     }
   },
-  "public": {}
+  "kadira": {
+    "appId": "dGAoWT8zbrZKwpoe3",
+    "appSecret": "e2be0f5b-e4e3-4287-b806-f550195f07a1"
+  }
 }

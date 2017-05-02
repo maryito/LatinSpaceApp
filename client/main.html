@@ -38,27 +38,27 @@
       <hr>
        <div class="row">
          <div style="height:550px;">
-           <h1 class="lsa-title-left"> Mapas </h1>
+           <h1 class="lsa-title-left"> {{_ "home_map"}} </h1>
           <h3>
-            En el mapa veremos los puntos donde se han reportando eventos de deslizamiento donde obtendremos: el nombre, la causa y el impacto.
+            {{_ "home_map_des"}}
           </h3>
           <img class="lsa-image-center" src="mapas.png" alt="mapa">
           <br>
-          <h2><a class="lsa-link" href="/maps"> Ver mapas completo</a></h2>
+          <h2><a class="lsa-link" href="/maps"> {{_ "home_map_link"}} <i class="fa fa-arrow-right"></i></a></h2>
          </div>
        </div>
-
+       <br>
+       <br>
       <div class="row lsa-padder">
         <!-- Instancia del template de api -->
         <!--{{> api}}-->
-        <h1 class="lsa-title-left"> Datos de API de la NASA </h1>
+        <h1 class="lsa-title-left"> {{_ "home_api"}} </h1>
           <h3>
-            En el veremos todos los eventos reportando de deslizamiento donde obtendremos: El lugar, el impacto, la direccion y otros puntos de interes.
-            donde le la la opcion de poner filtrar por diferentes opciones como pais, latitud, impacto.
+            {{_ "home_api_des"}}         
           </h3>
           <img class="lsa-image-center" src="datos.png" alt="mapa">
           <br>
-          <h2><a class="lsa-link" href="/maps"> Ver datos API completo  <i class="fa fa-arrow-right"></i></a></h2>
+          <h2><a class="lsa-link" href="/maps">{{_ "home_api_link"}}  <i class="fa fa-arrow-right"></i></a></h2>
       </div>
     </div>
     <div class="footer">

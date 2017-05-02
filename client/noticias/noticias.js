@@ -8,14 +8,14 @@ Template.noticias.helpers({
       const aum = Session.get('+Noticias')
       return Deslizamientos.find({}, { limit: aum});
   },
-  creador() {
+  
+  verificarVoto() {
       creador =  Meteor.userId();
       usu =  this.contribuidores.indexOf(''+Meteor.userId() )
-      
-      if ( usu !== 1 ){
-          return true
-      }else {
+      if ( creador == this.usuarioId || usu > -1 ){
           return false
+      }else {
+          return true
       }
   }
 });

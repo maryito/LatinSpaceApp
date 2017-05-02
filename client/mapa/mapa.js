@@ -34,6 +34,7 @@ Template.mapa.onRendered(function () {
             radius: 25000
         }).addTo(map);
         // Finally bind the containerNode to the popup
+        console.log(element.near);
         circle.bindPopup("<b>"+ element.near +"</b><br>"+ element.trigger +"<br>"+ element.landslide_type +".").openPopup();
 
         }, this);

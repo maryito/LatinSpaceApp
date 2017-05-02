@@ -13,7 +13,7 @@
                 <li class="list-group-item lsa-no-bg"> Estado del terreno: <span class="lsa-resaltator-3"> {{estado}} </span> </li>
                 <li class="list-group-item lsa-no-bg"> Ultima actualizacion: <span class="lsa-resaltator-4"> {{fechaReporte}} </span> </li>
                {{#if currentUser}}
-                {{#if creador}}
+                {{#if verificarVoto}}
                 <li class="list-group-item lsa-no-bg"> ¿Usted estuvo ahí?: <button class="lsa-btn-confirm" id="btMAs" data-id="{{_id}}"  style="margin:10px;"> Si </button> <button  id="btMenos" data-id="{{_id}}" class="lsa-btn-deny" style="margin:10px;"> No </button></li>
                 {{else}}
                     <li class="list-group-item lsa-no-bg"> Gracias por tu colaboracíon. </li>

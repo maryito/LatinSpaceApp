@@ -1,9 +1,16 @@
+cargando: Loading
 nav_home: Home
 nav_land: Data landslides
 nav_maps: Maps
 nav_rep: Report
 nav_new : News
 nav_know: Did you know?
+home_map: Maps
+home_map_link: View full map
+home_map_des: "In the map we will see the points where there have been reported sliding events where we will get: the name, the cause and the impact."
+home_api: NASA API Data
+home_api_link: View full API data
+home_api_des: "We will see all the sliding event reporting where we will get: The place, the impact, the address and other points of interest where you have the option to filter by different options like country, latitude, impact."
 api_title:  NASA Data API
 map_title: General Map
 translate: Select language

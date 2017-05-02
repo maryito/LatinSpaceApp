@@ -1,9 +1,16 @@
+cargando: Cargando
 nav_home: Inicio
 nav_land: Datos de deslizamientos
 nav_maps: Mapa
 nav_rep: Reportar
 nav_new : Noticias
 nav_know:  ¿Sabias Que?
+home_map: Mapas
+home_map_link: Ver mapa completo 
+home_map_des: "En el mapa veremos los puntos donde se han reportado eventos de deslizamiento donde obtendremos: el nombre, la causa y el impacto."
+home_api: Datos de API de la NASA
+home_api_link: Ver datos API completo 
+home_api_des: "En el veremos todos los eventos reportando de deslizamiento donde obtendremos: El lugar, el impacto, la direccion y otros puntos de interes. donde le la la opcion de poner filtrar por diferentes opciones como pais, latitud, impacto."
 api_title:  Datos API de la NASA
 map_title: Mapa General
 translate: Seleccione el lenguage

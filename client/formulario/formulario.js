@@ -21,16 +21,13 @@ Template.formulariomapa.rendered = function(){
   map.spin(true);
   map._layersMinZoom=3;
   map.spin(false);
-  map.setMaxBounds([[6.00072, -167.87109],[-9.24092, 267.71484]]);
-  var popup = L.popup();
+  map.setMaxBounds([[81.62647, -167.87109],[-66.00373, 267.71484]]);
+  var marker = L.marker();
 
   function onMapClick(e) {
-    var marker = L.marker([51.5, -0.09]).addTo(mymap);
-      popup
-          .setLatLng(e.latlng)
-          .setContent("You clicked the map at " + e.latlng.toString())
-          .openOn(map);
-  }
+    marker
+      .setLatLng(e.latlng);
+    }
 
   map.on('click', onMapClick);
 

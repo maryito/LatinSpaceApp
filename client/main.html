@@ -20,20 +20,47 @@
   <div class="page-content">
     <div class="row">
       <h1 class="lsa-title"> Monitoring Landslide System by LatinSpaceApp </h1>
-
+      <ul>
+        <li> <a href="/maps"> Mapa </a> </li>
+        <li> <a href="/api"> Datos API </a> </li>
+        <li> <a href="/formularios"> Formulario</a>   </li>
+        <li><a href="/noticias"> Noticias</a>  </li>
+        <li> <a href="/sabiasque"> Educacion</a>  </li>
+      </ul>
     <hr>
-
+    <div class="col-md-12">
+      <span>
+        <h3>  
+            {{_ "info"}}
+        </h3>        
+      </span>
+    </div>
+       
     </div>
     <hr>
      <div class="row">
        <div style="height:550px;">
-         {{> mapa }}
+         <h1> Mapas </h1>
+        <h3>
+          Mapas veremos una puntos donde se han reportando eventos de deslizamiento donde obtendremos. el nombre, la causa y el impacto.
+        </h3>
+        <img src="mapas.png" alt="mapa">
+        <br>
+        <h2><a href="/maps"> Ver mapas completo</a></h2>
        </div>
      </div>
 
     <div class="row">
       <!-- Instancia del template de api -->
-      {{> api}}
+      <!--{{> api}}-->
+      <h1> Datos de API de la NASA </h1>
+        <h3>
+          API de datos de deslizamiento veremos todos los eventos reportando de deslizamiento donde obtendremos. el lugar, el impacto, la direccion y otros puntos de interes.
+          donde le la la opcion de poner filtrar por diferentes opciones como pais, latitud, impacto.
+        </h3>
+        <img src="datos.png" alt="mapa">
+        <br>
+        <h2><a href="/maps"> Ver datos API completo</a></h2>
     </div>
   </div>
   <div class="footer">

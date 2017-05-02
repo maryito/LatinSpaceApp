@@ -1,5 +1,6 @@
 nav_home: Inicio
 nav_land: Datos de deslizamientos
+nav_maps: Mapa
 nav_rep: Reportar
 nav_new : Noticias
 nav_know:  ¿Sabias Que?
@@ -10,3 +11,4 @@ form_title: Reporte de Deslizamiento
 from_pas2: Fotos del Incidente
 from_pas2_p: Agregar Foto
 form_pas2_mas: Max. 5 optional
+info: "En esta página puede ver los tipos de deslizamiento a nivel mundial de modo informativo. Cuenta con las siguientes sesiones: mapas de deslizamientos, formularios de registro de delizamientos, alertas de ultimos eventos y un partado de educativo."

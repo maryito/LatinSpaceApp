@@ -5,3 +5,8 @@ nav_new : News
 nav_know: Did you know?
 api_title:  NASA Data API
 map_title: General Map
+translate: Select language
+form_title: Lanslides report
+from_pas2: Picture of the incident
+from_pas2_p:  Add  picture
+form_pas2_mas: Max. 5 fotos opcional 

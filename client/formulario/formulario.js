@@ -1,7 +1,7 @@
 Template.formularios.onCreated( function(){
     Session.set('FormularioListo', false);
     /*  GoogleMaps.load({
-        key: "AIzaSyCTmQZ_IJoqteedF6XDFjdsaCgaSxDnhik",
+        key: Meteor.settings.private.google.mapa,
         template: "places"
      }); */
 })

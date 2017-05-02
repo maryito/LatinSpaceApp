@@ -5,3 +5,8 @@ nav_new : Noticias
 nav_know:  ¿Sabias Que?
 api_title:  Datos API de la NASA
 map_title: Mapa General
+translate: Seleccione el lenguage
+form_title: Reporte de Deslizamiento
+from_pas2: Fotos del Incidente
+from_pas2_p: Agregar Foto
+form_pas2_mas: Max. 5 optional

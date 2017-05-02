@@ -8,3 +8,18 @@ Template.navegacion.rendered = function () {
           $('#navbar').collapse('hide');
   });
 };
+
+Template.navegacion.events({ 
+     'click #idiomaEs': function(event, template) {
+       event.preventDefault();
+        // tendria que obtener el idioma que seleciono
+        TAPi18n.setLanguage('es')
+        accountsUIBootstrap3.setLanguage('es');        
+    },
+     'click #idiomaEn': function(event, template) {
+       event.preventDefault();
+        // tendria que obtener el idioma que seleciono
+        TAPi18n.setLanguage('en')
+        accountsUIBootstrap3.setLanguage('en');        
+    }
+});

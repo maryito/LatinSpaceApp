@@ -1,6 +1,12 @@
 <head>
   <title>LatinSpaceApp</title>
   <link href="http://cesiumjs.org/releases/1.11/Build/Cesium/Widgets/widgets.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta content="Monitoring Landslide System" name="description"/>
+  <meta content="LatinSpaceApp" name="author"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
 </head>
 
 <template name="layout">
@@ -20,51 +26,43 @@
   <div class="page-content">
     <div class="row">
       <h1 class="lsa-title"> Monitoring Landslide System by LatinSpaceApp </h1>
-      <ul>
-        <li> <a href="/maps"> Mapa </a> </li>
-        <li> <a href="/api"> Datos API </a> </li>
-        <li> <a href="/formularios"> Formulario</a>   </li>
-        <li><a href="/noticias"> Noticias</a>  </li>
-        <li> <a href="/sabiasque"> Educacion</a>  </li>
-      </ul>
-    <hr>
-    <div class="col-md-12">
-      <span>
-        <h3>  
-            {{_ "info"}}
-        </h3>        
-      </span>
-    </div>
-       
-    </div>
-    <hr>
-     <div class="row">
-       <div style="height:550px;">
-         <h1> Mapas </h1>
-        <h3>
-          Mapas veremos una puntos donde se han reportando eventos de deslizamiento donde obtendremos. el nombre, la causa y el impacto.
-        </h3>
-        <img src="mapas.png" alt="mapa">
-        <br>
-        <h2><a href="/maps"> Ver mapas completo</a></h2>
-       </div>
-     </div>
+      <div class="col-md-12">
+        <span>
+          <h3>
+              {{_ "info"}}
+          </h3>
+        </span>
+      </div>
 
-    <div class="row">
-      <!-- Instancia del template de api -->
-      <!--{{> api}}-->
-      <h1> Datos de API de la NASA </h1>
-        <h3>
-          API de datos de deslizamiento veremos todos los eventos reportando de deslizamiento donde obtendremos. el lugar, el impacto, la direccion y otros puntos de interes.
-          donde le la la opcion de poner filtrar por diferentes opciones como pais, latitud, impacto.
-        </h3>
-        <img src="datos.png" alt="mapa">
-        <br>
-        <h2><a href="/maps"> Ver datos API completo</a></h2>
+      </div>
+      <hr>
+       <div class="row">
+         <div style="height:550px;">
+           <h1 class="lsa-title-left"> Mapas </h1>
+          <h3>
+            En el mapa veremos los puntos donde se han reportando eventos de deslizamiento donde obtendremos: el nombre, la causa y el impacto.
+          </h3>
+          <img class="lsa-image-center" src="mapas.png" alt="mapa">
+          <br>
+          <h2><a class="lsa-link" href="/maps"> Ver mapas completo</a></h2>
+         </div>
+       </div>
+
+      <div class="row lsa-padder">
+        <!-- Instancia del template de api -->
+        <!--{{> api}}-->
+        <h1 class="lsa-title-left"> Datos de API de la NASA </h1>
+          <h3>
+            En el veremos todos los eventos reportando de deslizamiento donde obtendremos: El lugar, el impacto, la direccion y otros puntos de interes.
+            donde le la la opcion de poner filtrar por diferentes opciones como pais, latitud, impacto.
+          </h3>
+          <img class="lsa-image-center" src="datos.png" alt="mapa">
+          <br>
+          <h2><a class="lsa-link" href="/maps"> Ver datos API completo  <i class="fa fa-arrow-right"></i></a></h2>
+      </div>
     </div>
-  </div>
-  <div class="footer">
-    {{> footer}}
-  </div>
+    <div class="footer">
+      {{> footer}}
+    </div>
 
 </template>

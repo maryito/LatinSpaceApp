@@ -1,0 +1,32 @@
+"appId": "1841561462765168", //l­o­c­a­l­h­o­s­t­:­3000 Dominio
+"secret": "f08d51d0f5982cd646012f04b9795a16", //l­o­c­a­l­h­o­s­t­:­3000  Dominio
+
+"appId": "1695212317449454", //l­a­t­i­n­s­p­a­c­e.ml  Dominio
+"secret": "d436e2cd52325152f362e5334ce3bf94", //l­a­t­i­n­s­p­a­c­e.ml  Dominio
+
+"appId": "1304135656360317", //1­3­8­.­1­9­7­.­1­5­5­.201  Dominio
+"secret": "17b9b3dc5635a8a8a8e56248439b0c5a" //1­3­8­.­1­9­7­.­1­5­5­.201  Dominio
+
+<---------------------------->
+
+Andres...
+localhost solamente de dominio utilize localhost era una prueba...
+
+"clientId": "54961041923-p6ld4f8p66rbf6pj70vkie6pn9qecomv.apps.googleusercontent.com",
+"secret": "0cj0UNmwZJ_mOcDir_SPmUot",
+
+Andres...
+
+Esta contiene tanto la Ip:138.197.155.201 - como la Direccion: latinspace.ml 
+y localhost:3000.
+Me sirvio utilizandola en localhost debe funcionar con alguna de las otras direcciones
+que deba utilizar.
+
+"clientId": "54961041923-k9af61i9t0jbogclqbcg1lkanucbgtua.apps.googleusercontent.com",
+"secret": "uYkGjXuulaFkEkICbiDAhlbd",
+
+Maryon...
+Esta es la Direccion de maryon que se utilizaba mas a mi no me funcionaba
+
+"clientId": "70399859572-oiqp836ptu0v2a0vahgbnl0ir1n3211l.apps.googleusercontent.com"
+"secret": "YYBZR-1lGk8j2LQxHE3q3si-",

@@ -1,0 +1,14 @@
+{
+  "private": {
+    "google": {
+      "clientId": "70399859572-oiqp836ptu0v2a0vahgbnl0ir1n3211l.apps.googleusercontent.com",
+      "secret": "YYBZR-1lGk8j2LQxHE3q3si-",
+      "mapa": "AIzaSyCTmQZ_IJoqteedF6XDFjdsaCgaSxDnhik"
+    },
+    "facebook": {
+      "appId": "1695212317449454",
+      "secret": "d436e2cd52325152f362e5334ce3bf94"
+    }
+  },
+  "public": {}
+}

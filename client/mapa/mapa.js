@@ -37,7 +37,7 @@ Template.mapa.onRendered(function () {
         circle.bindPopup("<b>"+ element.near +"</b><br>"+ element.trigger +"<br>"+ element.landslide_type +".").openPopup();
 
         }, this);
-        map.setMaxBounds([[6.00072, -167.87109],[-9.24092, 267.71484]]);
+        map.setMaxBounds([[81.62647, -167.87109],[-66.00373, 267.71484]]);
         map._layersMinZoom=3;
         map.spin(false);
 

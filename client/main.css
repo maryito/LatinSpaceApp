@@ -539,6 +539,10 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
     color: #000000;
     box-shadow: 0 12px 16px 0 rgba(0,0,255,0.19), 0 17px 50px 0 rgba(0,0,255,0.19);
   }
+  .lsa-padder
+  {
+    padding-top: 200px;
+  }
 }
 .lsa-btn
 {

@@ -5,11 +5,11 @@
 
     TAPi18n.setLanguage('es')
       .done(function () {
-        console.log("Iniciando en esp");
+        // console.log("Iniciando en esp");
       })
       .fail(function (error_message) {
         // Handle the situation
-        console.log(error_message);
+        // console.log(error_message);
       });
 
   });

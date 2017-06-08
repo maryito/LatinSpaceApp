@@ -1,17 +1,49 @@
 # LatinSpaceApp
-Proyecto de  space apps challenge team LatinSpaceApp
+Equipo participante del [Space apps challenge 2017](https://2017.spaceappschallenge.org/),
+es una maratón de desarrollo tecnológico dos días en  donde equipos de tecnólogos, científicos,
+diseñadores, artistas, educadores, empresarios,  desarrolladores y estudiantes de todo el mundo colaboran 
+y participan con los datos disponibles al público para diseñar soluciones innovadoras a los desafíos globales. 
 
-# Descripcion
-En este proyecto puede ver los tipos de deslizamiento a nivel mundial de modo informativo. Cuenta con las siguientes sesiones: mapas de deslizamientos, formularios de registro de delizamientos, alertas de ultimos eventos y un partado de educativo.
+Participamos en la categoría de [Warning Danger Ahead](https://2017.spaceappschallenge.org/challenges/warning-danger-ahead) 
+en el reto de [When Landslides Strike](https://2017.spaceappschallenge.org/challenges/warning-danger-ahead/when-landslides-strike/details), 
+con el proyecto [MONITORING LANDSLIDE SYSTEM](https://2017.spaceappschallenge.org/challenges/warning-danger-ahead/when-landslides-strike/teams/latinspaceapp/project)
+Ganadores del premio [Local Peoples Choice Winne](https://2017.spaceappschallenge.org/locations/panama-city/).
 
-Link del proyecto : ![alt proyecto](http://latinspace.ml/)
-![ alt fondo] (public/fondo.png)
+# Descripción
+En este proyecto desarrollamos una plataforma web, que contara con la caracteristica de ser facil de usar y con un contenido bastante amplio y
+ donde la comunidad pueda **aprender**, **analizar**, **conocer**, **visualizar** y **reportar**sobre los deslizamientos a nivel mundial.
 
-Desarrollado en Meteor multiplataforma
+Tambien que la **comunidad** pueda contribuir con el envio informes o alertas. Que se mostrará automáticamente y toda la información será en **tiempo real**. 
 
-*Antes que todo debe tener instalado meteor 
+Por ultimo creamos una sección de **aprendizaje** donde la comunidad puede ir aprendiendo. sobre qué hacer en caso de una emergencia de deslizamiento.
 
-#Instalamos las dependencia 
-meteor npm install
-#Ejecutamos el proyecto 
-meteor run --settings settings.json
+La plataforma cuenta con los siguiente apartado:
+ - Mapas de deslizamientos.
+ - Formularios de reporte de delizamientos.
+ - Alertas de ultimos eventos reportes.
+ - Apartado de educativo.
+
+Link:
+> [Proyecto](https://2017.spaceappschallenge.org/challenges/warning-danger-ahead/when-landslides-strike/teams/latinspaceapp/project)
+> [Sitio Web](http://latinspace.ml/)
+![alt plataforma](https://api-2017.spaceappschallenge.org/team-photos/DsjWITOgmdRdttO8pKWWaV7O2Lc=/4452/width-800/)
+
+# Desarrollado
+Equipo creador de este **grandioso proyecto**.
+> [Maryon Jose Torres Rodriguez](https://github.com/maryito) 
+
+> [Luis Daniel Mora Delgado](https://github.com/luismora2297)
+
+> [Andres Abadia](https://github.com/andrew962)
+
+> [Leonardo Esqueda](https://github.com/ShaoranD3)
+
+**Con la colaboración de:**
+> [Abdel Martinez](https://github.com/ampotty), Roy Coba, Bladimir Vega
+
+
+#Lincencia
+
+MIT
+
+**Software Libre**

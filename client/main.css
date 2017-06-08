@@ -508,6 +508,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   opacity: none;
   text-shadow: none;
   box-shadow: 0 12px 16px 0 rgba(0,0,255,0.19), 0 17px 50px 0 rgba(0,0,255,0.19);
+  list-style: none;
 }
 
 .lsa-btn-language
@@ -522,6 +523,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   text-shadow: none;
   color: #000000;
   box-shadow: 0 12px 16px 0 rgba(0,0,255,0.19), 0 17px 50px 0 rgba(0,0,255,0.19);
+  list-style: none;
 }
 
 @media screen and (max-width: 768px) {

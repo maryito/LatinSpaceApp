@@ -6,8 +6,12 @@
       "mapa": "AIzaSyCTmQZ_IJoqteedF6XDFjdsaCgaSxDnhik"
     },
     "facebook": {
-      "appId": "1695212317449454",
-      "secret": "d436e2cd52325152f362e5334ce3bf94"
+      "appId": "1914610825485095",
+      "secret": "2f3ea5090f1755eb34d9877405551e66"
+    },
+    "twitter": {
+      "appId": "ho47NCmIPOPQtwKwOxZqZrC81",
+      "secret": "hovGe7tMpBrc21XuMGcmRSPVes3rxaME66PyvLdQ2UlIGdtv5p"
     }
   },
   "kadira": {

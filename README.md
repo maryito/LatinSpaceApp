@@ -10,8 +10,8 @@ con el proyecto [MONITORING LANDSLIDE SYSTEM](https://2017.spaceappschallenge.or
 Ganadores del premio [Local Peoples Choice Winne](https://2017.spaceappschallenge.org/locations/panama-city/).
 
 # Descripción
-En este proyecto desarrollamos una plataforma web, que contara con la característica de ser fácil de usar y con un contenido bastante amplio y
- donde la comunidad pueda **aprender**, **analizar**, **conocer**, **visualizar** y **reportar**sobre los deslizamientos en el mundo.
+
+En este proyecto desarrollamos una plataforma web, que cuenta con las características de ser fácil de usar y con un contenido bastante amplio. y donde la comunidad pueda **aprender**, **analizar**, **conocer**, **visualizar** y **reportar**sobre los deslizamientos en el mundo.
 
 También que la **comunidad** pueda contribuir con el envío informes o alertas. Que se mostrará automáticamente y toda la información será en **tiempo real**. 
 
@@ -45,7 +45,6 @@ Equipo creador de este **grandioso proyecto**.
 
 
 # Lincencia
-
 MIT
 
 **Software Libre**

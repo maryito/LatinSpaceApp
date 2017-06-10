@@ -1,4 +1,7 @@
 {
+  "public": {
+    "mapa": "AIzaSyCTmQZ_IJoqteedF6XDFjdsaCgaSxDnhik"
+  },
   "private": {
     "google": {
       "clientId": "54961041923-k9af61i9t0jbogclqbcg1lkanucbgtua.apps.googleusercontent.com",

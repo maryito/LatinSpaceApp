@@ -1,9 +1,6 @@
 Template.formularios.onCreated( function(){
     Session.set('FormularioListo', false);
-    /*  GoogleMaps.load({
-        key: Meteor.settings.private.google.mapa,
-        template: "places"
-     }); */
+     
 })
 
 

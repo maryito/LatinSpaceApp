@@ -1,4 +1,4 @@
-## Instalación
+# Instalación
 
 > Requiere de [Meteor](https://www.meteor.com/) 1.4 o superior.
 

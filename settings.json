@@ -1,4 +1,7 @@
 {
+  "public": {
+    "mapa": "AIzaSyCTmQZ_IJoqteedF6XDFjdsaCgaSxDnhik"
+  },
   "private": {
     "google": {
       "clientId": "54961041923-k9af61i9t0jbogclqbcg1lkanucbgtua.apps.googleusercontent.com",
@@ -6,12 +9,12 @@
       "mapa": "AIzaSyCTmQZ_IJoqteedF6XDFjdsaCgaSxDnhik"
     },
     "facebook": {
-      "appId": "121838338371952",
-      "secret": "5696b7abf7d81a0196c93c87482f7386"
+      "appId": "1914610825485095",
+      "secret": "2f3ea5090f1755eb34d9877405551e66"
+    },
+    "twitter": {
+      "appId": "ho47NCmIPOPQtwKwOxZqZrC81",
+      "secret": "hovGe7tMpBrc21XuMGcmRSPVes3rxaME66PyvLdQ2UlIGdtv5p"
     }
-  },
-  "kadira": {
-    "appId": "dGAoWT8zbrZKwpoe3",
-    "appSecret": "e2be0f5b-e4e3-4287-b806-f550195f07a1"
   }
 }

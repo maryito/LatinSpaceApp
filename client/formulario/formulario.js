@@ -1,43 +1,40 @@
 Template.formularios.onCreated( function(){
     Session.set('FormularioListo', false);
-    /*  GoogleMaps.load({
-        key: Meteor.settings.private.google.mapa,
-        template: "places"
-     }); */
+     
 })
 
+// Template.formulariomapa.rendered = function(){
+//   L.Icon.Default.imagePath = '/packages/bevanhunt_leaflet/images/';
+//   var mapUrl = 'http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png';
+//   var mapTiles = L.tileLayer(mapUrl);
+//   var map = L.map('map', {
+//     zoom: 5,
+//     center: [8.997669, -79.526854],
+//     scrollWheelZoom: true,
+//     layers: [mapTiles],
+//     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+//   });
+//   map.spin(true);
+//   map._layersMinZoom=3;
+//   map.spin(false);
+//   map.setMaxBounds([[81.62647, -167.87109],[-66.00373, 267.71484]]);
+//   var marker = L.marker();
 
-Template.formulariomapa.rendered = function(){
-  L.Icon.Default.imagePath = '/packages/bevanhunt_leaflet/images/';
-  var mapUrl = 'http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png';
-  var mapTiles = L.tileLayer(mapUrl);
-  var map = L.map('map', {
-    zoom: 5,
-    center: [8.997669, -79.526854],
-    scrollWheelZoom: true,
-    layers: [mapTiles],
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  });
-  map.spin(true);
-  map._layersMinZoom=3;
-  map.spin(false);
-  map.setMaxBounds([[81.62647, -167.87109],[-66.00373, 267.71484]]);
-  var marker = L.marker();
+//   function onMapClick(e) {
+//     marker
+//       .setLatLng(e.latlng);
+//     }
 
-  function onMapClick(e) {
-    marker
-      .setLatLng(e.latlng);
-    }
+//   map.on('click', onMapClick);
 
-  map.on('click', onMapClick);
+//   };
 
-  };
 
-Template.formularios.helpers({
-   ReadyForm() {
-       return  Session.get('FormularioListo');
-   }
-})
+//   Template.formularios.helpers({
+//    ReadyForm() {
+//        return  Session.get('FormularioListo');
+//    }
+// })
 
 
 Template.uploadForm.onCreated(function () {
